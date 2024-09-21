@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>TravelSmart - Review Form</title>
+</head>
+
+<body>
+    <header>
+        <div class="nav-bar">
+            <div id="nav-logo">
+                <a href="/index.html">
+                    <img src="/Images/Logo - bold.png" alt="Logo">
+                </a>
+            </div>
+            <nav>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="/index.html" class="nav-links-name">Home</a></li>
+                    <li><a href="/About/about.html" class="nav-links-name">About</a></li>
+                    <li><a href="/Destinations/destination.html" class="nav-links-name">Destinations</a></li>
+                    <!-- <li><a href="" class="nav-links-name">Blog</a></li> -->
+                    <li><a href="/Contact-us/contact.html" class="nav-links-name">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </header>
+
+    <main class="page-color">
+        <div class="space-section"></div>
+
+        <section class="contact-us-section contact-us-side">
+            <div class="contact-details">
+                <h2 class="contact-us-title">Tour Review</h2>
+                <p class="contact-para">We’d love to hear from you! Share your experience to help others choose the perfect tour.</p>
+            </div>
+            <form id="reviewForm" class="review-form">
+                <div class="error-message" id="reviewErrorMessage" style="text-align: center;"></div>
+            
+                <label for="name" class="form-label">Your Name:</label>
+                <input type="text" id="reviewName" name="reviewName" class="form-input" placeholder="Enter your name">
+            
+                <label for="destination" class="form-label">Destination Reviewed:</label>
+                <input type="text" id="reviewDestination" name="reviewDestination" class="form-input" placeholder="Enter the destination name">
+            
+                <label for="tourRating" class="form-label">Rate the Tour (1-5):</label>
+                <select id="tourRating" name="tourRating" class="form-input">
+                    <option value="" disabled selected>Select rating</option>
+                    <option value="1">1 - Poor</option>
+                    <option value="2">2 - Fair</option>
+                    <option value="3">3 - Good</option>
+                    <option value="4">4 - Very Good</option>
+                    <option value="5">5 - Excellent</option>
+                </select>
+            
+                <label for="serviceRating" class="form-label">Rate the Service (1-5):</label>
+                <select id="serviceRating" name="serviceRating" class="form-input">
+                    <option value="" disabled selected>Select rating</option>
+                    <option value="1">1 - Poor</option>
+                    <option value="2">2 - Fair</option>
+                    <option value="3">3 - Good</option>
+                    <option value="4">4 - Very Good</option>
+                    <option value="5">5 - Excellent</option>
+                </select>
+            
+                <label for="reviewMessage" class="form-label">Your Review:</label>
+                <textarea id="reviewMessage" name="reviewMessage" class="form-textarea" placeholder="Share your experience" rows="4"></textarea>
+            
+                <div class="form-submit-container">
+                    <button type="submit" class="form-submit">Submit Review</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <section class="footer">
+        <div class="footer-row">
+            <div class="footer-col">
+                <h4 class="footer-title">Info</h4>
+                <ul class="links">
+                    <li><a href="/About/about.html">About Us</a></li>
+                    <li><a href="/Destinations/destination.html">Destinations</a></li>
+                    <li><a href="/Contact-us/contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-title">Legal</h4>
+                <ul class="links">
+                    <li><a href="/Footer pages/privecy.html">Privacy Policy</a></li>
+                    <li><a href="/Footer pages/terms.html">Terms of Service</a></li>
+                    <li><a href="/Footer pages/cookies.html">Cookies Policy</a></li>
+                    <li><a href="/Footer pages/sitemap.html">Site Map</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-title">Newsletter</h4>
+                <p>
+                    Subscribe to our newsletter for a weekly dose
+                    of news, updates, helpful tips, and
+                    exclusive offers.
+                </p>
+                <div class="footer-form">
+                    <form action="#">
+                        <input type="text" placeholder="Your email" required>
+                        <button type="submit">SUBSCRIBE</button>
+                    </form>
+                </div>
+                <div class="icons">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

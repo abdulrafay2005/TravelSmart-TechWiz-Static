@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelSmart - Home</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+</head>
+
+<body>
+    <!-- HEADER SECTION -->
+    <header>
+        <div class="nav-bar">
+            <div id="nav-logo">
+                <a href="/index.html">
+                    <img src="/Images/Logo - bold.png" alt="Logo">
+                </a>
+            </div>
+            <nav>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="/index.html" class="nav-links-name">Home</a></li>
+                    <li><a href="/About/about.html" class="nav-links-name">About</a></li>
+                    <li><a href="/Destinations/destination.html" class="nav-links-name">Destinations</a></li>
+                    <li><a href="/Contact-us/contact.html" class="nav-links-name">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+
+    <section class="hero">
+        <video autoplay muted loop playsinline class="hero-video">
+            <source src="/Images/hero-video (1).mp4" type="video/mp4">
+        </video>
+        <div class="hero-content">
+            <h1 class="hero-title">EXPLORE. DREAM. DISCOVER.</h1>
+            <p class="hero-description">This is a world travel blog featuring beautiful destinations, new experiences,
+                and hidden places around the globe.</p>
+        </div>
+    </section>
+
+    <!-- <div style="background-color: #FCFEFE; height: 100px; margin-top: 100px;"></div> -->
+
+    <main class="page-color">
+
+        <div class="search-container">
+            <form class="search-form" onsubmit="navigateToCountry(event)">
+                <label for="destination">I want to travel to</label>
+                <div class="search-bar">
+                    <select id="destination" class="destination-select">
+                        <option value="" disabled selected>Select a destination</option>
+                        <option value="usa">USA</option>
+                        <option value="brazil">Brazil</option>
+                        <option value="uruguay">Uruguay</option>
+                        <option value="peru">Peru</option>
+                        <option value="japan">Japan</option>
+                        <option value="china">China</option>
+                        <option value="india">India</option>
+                        <option value="pakistan">Pakistan</option>
+                        <option value="netherlands">Netherlands</option>
+                        <option value="italy">Italy</option>
+                        <option value="turkey">Turkey</option>
+                        <option value="spain">Spain</option>
+                        <option value="egypt">Egypt</option>
+                        <option value="saudi-arabia">Saudi Arabia</option>
+                        <option value="dubai">Dubai</option>
+                        <option value="australia">Australia</option>
+                        <option value="new-zealand">New Zealand</option>
+                        <!-- Add more countries here -->
+                    </select>
+                    
+                    <button type="submit" class="search-button">
+                        Search <i class="ri-search-line"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+
+
+        <section class="about-section about-section-side">
+            <div class="about-section-main">
+                <div class="about-section-left">
+                    <img src="/Images/about-us.jpg" alt="About Us Image">
+                </div>
+                <div class="about-section-right">
+                    <h1 class="about-section-title">About Us.</h1>
+                    <p class="about-section-description">
+                        Welcome to SmartTravel! We’re a group of travel enthusiasts who are passionate about exploring the world and sharing our love for adventure with others. With years of experience in the travel industry, we’ve dedicated ourselves to creating meaningful, unforgettable travel experiences for all types of travelers. Whether you're an explorer seeking new cultures or a first-time traveler looking for a guided experience, our goal is to help you discover the world in a way that resonates with your passions and interests.
+                        <br><br>
+                        At SmartTravel, we believe that travel is more than just visiting destinations—it’s about immersing yourself in the richness of each place, connecting with locals, and gaining new perspectives. Our team of seasoned travelers is committed to designing personalized journeys that allow you to experience the true heart of the places you visit. We provide carefully curated recommendations, insider tips, and expert advice to ensure every trip is as unique as the traveler.
+                       
+                    </p>
+                    
+                    <a href="/About/about.html" class="about-section-button">Read More</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="destination-section destination-section-side">
+            <h1 class="destination-title">Destinations.</h1>
+            <div class="destination-container">
+                <div class="destination-card">
+                    <a href="/Destinations-pages/japan.html">
+                        <img src="/Destinations/Images/Place/Japan-min.jpg" alt="Japan">
+                        <div class="overlay-text">
+                            <div class="overlay-background"></div>
+
+                            <h2>Japan</h2>
+                        </div>
+                    </a>
+                </div>
+                <div class="destination-card">
+                    <a href="/Destinations-pages/netherlands.html">
+                        <img src="/Destinations/Images/Place/Netherlands-min.jpg" alt="Netherlands">
+                        <div class="overlay-text">
+                            <div class="overlay-background"></div>
+
+                            <h2>Netherlands</h2>
+                        </div>
+                    </a>
+                </div>
+                <div class="destination-card">
+                    <a href="/Destinations-pages/turkey.html">
+                        <img src="/Destinations/Images/Place/Turkey-min.jpg" alt="Turkey">
+                        <div class="overlay-text">
+                            <div class="overlay-background"></div>
+
+                            <h2>Turkey</h2>
+                        </div>
+                    </a>
+                </div>
+                <div class="destination-card">
+                    <a href="/Destinations-pages/pakistan.html">
+                        <img src="/Destinations/Images/Place/Pakistan-min.jpg" alt="Pakistan">
+                        <div class="overlay-text">
+                            <div class="overlay-background"></div>
+
+                            <h2>Pakistan</h2>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <a href="/Destinations/destination.html" class="destination-button">View More</a>
+        </section>
+
+        <section class="why-us-section why-us-section-side">
+            <h2 class="why-us-title">Why choose us.</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <div>
+                        <i class="fas fa-calendar-check"></i>
+                        <h3>Flexible bookings</h3>
+                    </div>
+                    <p>Travel plans change. We get it – and we're here to help! Learn all about our flexible booking
+                        options.</p>
+                </div>
+                <div class="card">
+                    <div>
+                        <i class="fas fa-users"></i>
+                        <h3>Like-minded travellers</h3>
+                    </div>
+                    <p>Connect and share experiences with a community of spirited explorers who care about the planet.
+                    </p>
+                </div>
+                <div class="card">
+                    <div>
+                        <i class="fas fa-map-marked-alt"></i>
+                        <h3>The right trip for you</h3>
+                    </div>
+                    <p>Whether near or far from home, your trip will be local-led and full of unforgettable experiences,
+                        with everything taken care of.</p>
+                </div>
+                <div class="card">
+                    <div>
+                        <i class="fas fa-globe"></i>
+                        <h3>Global Destinations</h3>
+                    </div>
+                    <p>Explore a wide range of destinations across the globe. Your adventure awaits!</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="review-section review-section-side">
+            <h1 class="review-title">
+                testimonials.</h1>
+            <div class="review-container">
+                <div class="review-card">
+                    <div class="review-content">
+                        <h3 class="review-card-title">Great Experience!</h3>
+                        <p class="review-card-desc">"Had an amazing time exploring the beaches. Highly recommended!"</p>
+                        <div class="review-author">
+                            <span>John Doe</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-content">
+                        <h3 class="review-card-title">Beautiful Scenery!</h3>
+                        <p class="review-card-desc">"The mountains were breathtaking and the tour was well organized."
+                        </p>
+                        <div class="review-author">
+                            <span>Jane Smith</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-content">
+                        <h3 class="review-card-title">Would visit again!</h3>
+                        <p class="review-card-desc">"The food, the culture, everything was perfect!"</p>
+                        <div class="review-author">
+                            <span>Sam Lee</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-content">
+                        <h3 class="review-card-title">Amazing Hospitality!</h3>
+                        <p class="review-card-desc">"The locals were so welcoming, I felt right at home!"</p>
+                        <div class="review-author">
+                            <span>Emily Davis</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="review-button-section">
+                <a href="/Review-form/review.html" class="review-button">Leave a Review</a>
+            </div>
+        </section>
+
+        <section class="questions-section questions-section-side">
+            <div class="container">
+                <h2 class="question-title">Have any questions or need assistance?</h2>
+                <p class="question-description">We're here to help! Whether you need more information about our services or have specific questions, feel free to reach out to us. Our team is always ready to provide the support you need.</p>
+                <p class="question-description">Contact us for personalized advice or to schedule a consultation with one of our experts.</p>
+                <a href="/Contact-us/contact.html" class="contact-button">Get in Touch</a>
+            </div>
+        </section>
+        
+    </main>
+    <section class="footer">
+        <div class="footer-row">
+            <div class="footer-col">
+                <h4 class="footer-title">Info</h4>
+                <ul class="links">
+                    <li><a href="/About/about.html">About Us</a></li>
+                    <li><a href="/Destinations/destination.html">Destinations</a></li>
+                    <li><a href="/Contact-us/contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-title">Legal</h4>
+                <ul class="links">
+                    <li><a href="/Footer pages/privecy.html">Privacy Policy</a></li>
+                    <li><a href="/Footer pages/terms.html">Terms of Service</a></li>
+                    <li><a href="/Footer pages/cookies.html">Cookies Policy</a></li>
+                    <li><a href="/Footer pages/sitemap.html">Site Map</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-title">Newsletter</h4>
+                <p>
+                    Subscribe to our newsletter for a weekly dose
+                    of news, updates, helpful tips, and
+                    exclusive offers.
+                </p>
+                <div class="footer-form">
+                    <form action="#">
+                        <input type="text" placeholder="Your email" required>
+                        <button type="submit">SUBSCRIBE</button>
+                    </form>
+                </div>
+                <div class="icons">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

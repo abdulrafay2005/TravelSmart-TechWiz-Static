@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>TravelSmart - Booking</title>
+</head>
+<style>
+
+
+</style>
+<body>
+    <header>
+        <div class="nav-bar">
+            <div id="nav-logo">
+                <a href="/index.html">
+                    <img src="/Images/Logo - bold.png" alt="Logo">
+                </a>
+            </div>
+            <nav>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="/index.html" class="nav-links-name">Home</a></li>
+                    <li><a href="/About/about.html" class="nav-links-name">About</a></li>
+                    <li><a href="/Destinations/destination.html" class="nav-links-name">Destinations</a></li>
+                    <li><a href="/Contact-us/contact.html" class="nav-links-name">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </header>
+
+    <main class="page-color">
+        <div class="space-section"></div>
+
+        <section id="booking-form-section" class="booking-form-container">
+            <h2 class="booking-form-title">Booking Form</h2>
+            <p class="booking-form-description">Fill in the form below to inquire about your trip. Our team will get back to you shortly.</p>
+            
+            <form id="booking-form" class="booking-form" action="#" method="post">
+                <div class="form-group">
+                    <label for="name" class="form-label">Full Name:</label>
+                    <input type="text" id="name" name="name" class="form-input" required placeholder="Enter Your Full Name">
+                </div>
+        
+                <div class="form-group">
+                    <label for="email" class="form-label">Email Address:</label>
+                    <input type="email" id="email" name="email" class="form-input" required placeholder="Enter Your Email Address">
+                </div>
+        
+                <div class="form-group">
+                    <label for="phone" class="form-label">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" class="form-input" placeholder="Enter Your Phone Number">
+                </div>
+        
+                <div class="form-group">
+                    <label for="destination" class="form-label">Preferred Destination:</label>
+                    <select id="destination" name="destination" class="form-input" required>
+                        <option value="">Select a destination</option>
+                        <option value="uruguay">Uruguay</option>
+                        <option value="japan">Japan</option>
+                        <option value="india">India</option>
+                        <option value="pakistan">Pakistan</option>
+                        <option value="spain">Spain</option>
+                        <option value="egypt">Egypt</option>
+                        <option value="turkey">Turkey</option>
+                        <option value="saudi-arabia">Saudi Arabia</option>
+                        <option value="dubai">Dubai</option>
+                        <option value="australia">Australia</option>
+                        <option value="new-zealand">New Zealand</option>
+                    </select>
+                </div>
+        
+                <div class="form-group">
+                    <label for="package" class="form-label">Select Travel Package:</label>
+                    <select id="package" name="package" class="form-input" required>
+                        <option value="">Choose a package</option>
+                        <option value="family-package">Family Package</option>
+                        <option value="luxury-package">Luxury Package</option>
+                        <option value="adventure-package">Adventure Package</option>
+                        <option value="cultural-package">Cultural Experience Package</option>
+                    </select>
+                </div>
+        
+                <div class="form-group">
+                    <label for="travel-date" class="form-label">Preferred Travel Date:</label>
+                    <input type="date" id="travel-date" name="travel-date" class="form-input" placeholder="Enter Your Travel Date" required>
+                </div>
+        
+                <div class="form-group">
+                    <label for="message" class="form-label">Additional Information or Requests</label>
+                    <textarea id="message" name="message" class="form-textarea" placeholder="Tell us about your trip requirements..."></textarea>
+                </div>
+        
+                <div class="form-submit-container">
+                    <button type="submit" class="form-submit">Submit Enquiry</button>
+                </div>
+                
+                <p class="error-message" style="display:none;">Please fill in all required fields.</p>
+            </form>
+        </section>
+        
+        
+        
+        
+        
+   
+    </main>
+
+    <section class="footer">
+        <div class="footer-row">
+            <div class="footer-col">
+                <h4 class="footer-title">Info</h4>
+                <ul class="links">
+                    <li><a href="/About/about.html">About Us</a></li>
+                    <li><a href="/Destinations/destination.html">Destinations</a></li>
+                    <li><a href="/Contact-us/contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-title">Legal</h4>
+                <ul class="links">
+                    <li><a href="/Footer pages/privecy.html">Privacy Policy</a></li>
+                    <li><a href="/Footer pages/terms.html">Terms of Service</a></li>
+                    <li><a href="/Footer pages/cookies.html">Cookies Policy</a></li>
+                    <li><a href="/Footer pages/sitemap.html">Site Map</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-title">Newsletter</h4>
+                <p>
+                    Subscribe to our newsletter for a weekly dose
+                    of news, updates, helpful tips, and
+                    exclusive offers.
+                </p>
+                <div class="footer-form">
+                    <form action="#">
+                        <input type="text" placeholder="Your email" required>
+                        <button type="submit">SUBSCRIBE</button>
+                    </form>
+                </div>
+                <div class="icons">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+document.addEventListener('DOMContentLoaded', function () {
+    const faqItems = document.querySelectorAll('.faq-item');
+
+    // Initially hide all answers
+    faqItems.forEach(item => {
+        const answer = item.querySelector('.faq-answer');
+        answer.classList.remove('show'); // Ensure all answers are hidden at start
+    });
+
+    // Toggle answer visibility on question click
+    faqItems.forEach(item => {
+        const question = item.querySelector('.faq-question');
+        const answer = item.querySelector('.faq-answer');
+
+        question.addEventListener('click', () => {
+            // Toggle the clicked answer
+            answer.classList.toggle('show');
+        });
+    });
+
+    // Search functionality
+    document.getElementById('faq-search').addEventListener('keyup', function () {
+        const searchQuery = this.value.toLowerCase();
+
+        faqItems.forEach(item => {
+            const question = item.querySelector('.faq-question').innerText.toLowerCase();
+            const answer = item.querySelector('.faq-answer').innerText.toLowerCase();
+
+            if (question.includes(searchQuery) || answer.includes(searchQuery)) {
+                item.style.display = 'block';
+                highlight(item, searchQuery);
+            } else {
+                item.style.display = 'none';
+            }
+        });
+    });
+
+    function highlight(item, query) {
+        const question = item.querySelector('.faq-question');
+        const answer = item.querySelector('.faq-answer');
+
+        question.innerHTML = question.innerText.replace(new RegExp(query, 'gi'), match => {
+            return '<span class="highlight">' + match + '</span>';
+        });
+
+        answer.innerHTML = answer.innerText.replace(new RegExp(query, 'gi'), match => {
+            return '<span class="highlight">' + match + '</span>';
+        });
+    }
+});
+
+
+    </script>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

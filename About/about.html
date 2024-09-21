@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>TravelSmart - About</title>
+</head>
+<style>
+    .about-section {
+        margin: 0 auto;
+        max-width: 85%;
+    }
+
+    .about-title {
+        font-family: "Montserrat", sans-serif;
+        text-transform: uppercase;
+        font-size: 3em;
+        margin-bottom: 20px;
+        margin-top: 0;
+        color: #222222;
+    }
+
+    .about-subheading {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 600;
+        font-size: 1.5em;
+        text-transform: uppercase;
+        margin-top: 30px;
+    }
+
+    .about-para {
+        font-family: "Open Sans", sans-serif;
+        font-size: 18px;
+        margin-bottom: 20px;
+        color: #222222;
+    }
+
+    .bullet-points li {
+        list-style-type: disc;
+        font-family: "Open Sans", sans-serif;
+        font-size: 1em;
+        font-weight: 500;
+    }
+
+    strong {
+        color: green;
+    }
+
+    .img-gallery img {
+        width: 100%;
+        height: 300px;
+        border-radius: 6px;
+    }
+
+    .about-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 30px;
+        margin-bottom: 5em;
+    }
+
+    .about-img-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        margin: 3em 0;
+    }
+
+
+    @media (max-width: 1024px) {
+        .about-title {
+            font-size: 2.6em;
+            margin-bottom: 20px;
+        }
+
+        .about-para {
+            font-size: 16px;
+            margin-bottom: 40px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .about-title {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .about-para {
+            font-size: 14px;
+            margin-bottom: 40px;
+        }
+    }
+
+    @media (max-width: 425px) {
+        .about-section-title {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+    }
+
+
+    @media (max-width: 1024px) {
+        .about-img-container {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    @media (max-width: 768px) {
+        .about-img-container {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>
+
+<body>
+    <header>
+        <div class="nav-bar">
+            <div id="nav-logo">
+                <a href="/index.html">
+                    <img src="/Images/Logo - bold.png" alt="Logo">
+                </a>
+            </div>
+            <nav>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="/index.html" class="nav-links-name">Home</a></li>
+                    <li><a href="/About/about.html" class="nav-links-name">About</a></li>
+                    <li><a href="/Destinations/destination.html" class="nav-links-name">Destinations</a></li>
+                    <li><a href="/Contact-us/contact.html" class="nav-links-name">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </header>
+
+    <div class="hero-section">
+        <div class="hero-content">
+            <h1 class="hero-title">About Us</h1>
+            <p class="hero-description">Where Will Your Next Journey Take You?</p>
+        </div>
+    </div>
+
+    <main class="page-color">
+        <div class="space-section"></div>
+
+        <section class="about-section">
+            <div class="about-container">
+                <div>
+                    <h1 class="about-title">About Us</h1>
+                    <h2 class="about-subheading">SmartTravel Team</h2>
+                    <p class="about-para">Welcome to <em>SmartTravel</em>! We’re a team of passionate globetrotters who
+                        have been traveling
+                        the world for over a decade, exploring the beauty, culture, and hidden gems that our planet has
+                        to offer.
+                        Whether it’s traversing the rugged landscapes of Patagonia, enjoying the serene beaches of Bali,
+                        or
+                        discovering the ancient temples of Kyoto, SmartTravel is committed to helping others experience
+                        the joy of
+                        world travel firsthand.</p>
+                    <p class="about-para">We believe in more than just visiting places; we’re dedicated to creating
+                        authentic travel
+                        experiences that connect you to the heart and soul of the destinations. From solo backpackers to
+                        families
+                        looking for an adventure, our goal is to inspire and guide you through every stage of your
+                        journey.</p>
+                    <h2 class="about-subheading">Our Journey Around the World</h2>
+                    <ul class="bullet-points">
+                        <li>
+                            In <strong>2015</strong>, we began our travels with a life-changing road trip across
+                            <strong>New
+                                Zealand</strong>, where we camped under the stars in Fiordland National Park and hiked
+                            the iconic
+                            Milford Track. It was here that we realized the power of travel to transform perspectives
+                            and rejuvenate
+                            the soul.
+                        </li>
+                        <br>
+                        <li>
+                            In <strong>Southeast Asia</strong>, we spent six months immersing ourselves in the rich
+                            cultures of
+                            Thailand, <strong>Vietnam</strong>, and <strong>Indonesia</strong>. From floating markets in
+                            Bangkok to
+                            the historic streets of Hanoi, we discovered the unique flavors, traditions, and warmth of
+                            the local
+                            communities.
+                        </li>
+                        <br>
+                        <li>
+                            Our travels took us to <strong>South America</strong> in <strong>2018</strong>, where we
+                            trekked through the Amazon rainforest, summited the Andes, and explored the ancient ruins of
+                            strong. Along the way, we learned the importance of sustainable and responsible tourism, a
+                            core value we now bring to SmartTravel.
+                        </li>
+                    </ul>
+
+                    <div class="about-img-container">
+                        <div class="img-gallery">
+                            <img src="Images/about-img1.jpg" alt="">
+                        </div>
+                        <div class="img-gallery">
+                            <img src="Images/about-img2.jpg" alt="">
+                        </div>
+                        <div class="img-gallery">
+                            <img src="Images/about-img3.jpg" alt="">
+                        </div>
+                        <div class="img-gallery">
+                            <img src="Images/about-img4.jpg" alt="">
+                        </div>
+                        <div class="img-gallery">
+                            <img src="Images/about-img5.jpg" alt="">
+                        </div>
+                        <div class="img-gallery">
+                            <img src="Images/about-img6.jpg" alt="">
+                        </div>
+                        <div class="img-gallery">
+                            <img src="Images/about-img7.jpg" alt="">
+                        </div>
+                        <div class="img-gallery">
+                            <img src="Images/about-img8.jpg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="about-subheading">Why Choose SmartTravel?</div>
+                    <p class="about-para">At <em> SmartTravel</em>, we provide personalized itineraries, travel tips,
+                        and resources for
+                        adventurers, families, and solo travelers alike. We’ve partnered with local guides across the
+                        globe to
+                        ensure every trip you take with us is more than just sightseeing — it’s a chance to connect with
+                        the world
+                        in a meaningful way.</p>
+                    <ul class="bullet-points">
+                        <li>
+                            <strong>Sustainablity:</strong>We believe in leaving a minimal footprint wherever we travel.
+                            Our
+                            eco-friendly tips help reduce waste and promote ethical tourism.
+
+                        </li>
+                        <br>
+                        <li>
+                            <strong>Expert Guidance:</strong> With our years of experience, we curate the best
+                            experiences tailored
+                            to your interests, from budget-friendly backpacking tips to luxurious getaways.
+
+                        </li>
+                        <br>
+                        <li>
+                            <strong>Adventure & Safety: </strong>Whether you're hiking up a volcano in Iceland or
+                            snorkeling in the
+                            Great Barrier Reef, we offer advice on how to stay safe while enjoying every moment to its
+                            fullest.
+
+                        </li>
+                    </ul>
+
+                    <div class="about-subheading">Join Us on Our Next Adventure!</div>
+                    <p class="about-para">Traveling with <em>SmartTravel</em> means embracing curiosity, adventure, and
+                        discovery. We’re here to support you every step of the way, whether you’re planning your first
+                        trip abroad or your 50th journey around the globe.</p>
+                </div>
+
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <section class="footer">
+        <div class="footer-row">
+            <div class="footer-col">
+                <h4 class="footer-title">Info</h4>
+                <ul class="links">
+                    <li><a href="/About/about.html">About Us</a></li>
+                    <li><a href="/Destinations/destination.html">Destinations</a></li>
+                    <li><a href="/Contact-us/contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-title">Legal</h4>
+                <ul class="links">
+                    <li><a href="/Footer pages/privecy.html">Privacy Policy</a></li>
+                    <li><a href="/Footer pages/terms.html">Terms of Service</a></li>
+                    <li><a href="/Footer pages/cookies.html">Cookies Policy</a></li>
+                    <li><a href="/Footer pages/sitemap.html">Site Map</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-title">Newsletter</h4>
+                <p>
+                    Subscribe to our newsletter for a weekly dose
+                    of news, updates, helpful tips, and
+                    exclusive offers.
+                </p>
+                <div class="footer-form">
+                    <form action="#">
+                        <input type="text" placeholder="Your email" required>
+                        <button type="submit">SUBSCRIBE</button>
+                    </form>
+                </div>
+                <div class="icons">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

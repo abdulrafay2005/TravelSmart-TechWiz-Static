@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelSmart - Destinations</title>
+
+    <link rel="stylesheet" href="/Destinations/style.css">
+</head>
+
+<body>
+    <!-- HEADER SECTION -->
+    <header>
+        <div class="nav-bar">
+            <div id="nav-logo">
+                <a href="/index.html">
+                    <img src="/Images/Logo - bold.png" alt="Logo">
+                </a>
+            </div>
+            <nav>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="/index.html" class="nav-links-name">Home</a></li>
+                    <li><a href="/About/about.html" class="nav-links-name">About</a></li>
+                    <li><a href="/Destinations/destination.html" class="nav-links-name">Destinations</a></li>
+                    <li><a href="/Contact-us/contact.html" class="nav-links-name">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="hero">
+        <div class="hero-content">
+            <div class="hero-content-background"></div>
+            <h1 class="hero-title">DESTINATIONS</h1>
+            <p class="hero-description">Pick a destination and start exploring.</p>
+        </div>
+    </div>
+
+    <main class="page-color">
+
+        <div class="space-section"></div>
+
+        <!-- Sorting Dropdown -->
+        <section class="sorting-section">
+            <label for="sorting-options">Sort Destinations:</label>
+            <select id="sorting-options">
+                <option value="default">Default</option>
+                <option value="name">Alphabetically (A-Z)</option>
+                <option value="reverse">Alphabetically (Z-A)</option>
+                <option value="popularity">By Popularity</option>
+                <option value="reviews">By User Rating</option>
+            </select>
+        </section>
+
+
+        <section class="destinations-section destination-section-side" id="destinations-section">
+            <!-- 1 -->
+            <h1 class="heading">Americas</h1>
+            <div class="destinations-container">
+                <div class="destination-card" data-country="USA" data-popularity="92" data-reviews="4.7">
+                    <a href="/Destinations-pages/usa.html">
+                        <img src="/Destinations/Images/Place/USA-min.jpg" alt="USA">
+                        <div class="overlay-text">
+                            <div class="overlay-background"></div>
+                            <h2>USA</h2>
+                        </div>
+                    </a>
+                </div>
+                <div class="destination-card" data-country="Brazil" data-popularity="88" data-reviews="4.5">
+                    <a href="/Destinations-pages/brazil.html">
+                        <img src="/Destinations/Images/Place/Brazil-min.jpg" alt="Brazil">
+                        <div class="overlay-text">
+                            <div class="overlay-background"></div>
+                            <h2>Brazil</h2>
+                        </div>
+                    </a>
+                </div>
+                <div class="destination-card" data-country="Uruguay" data-popularity="76" data-reviews="4.3">
+                    <a href="/Destinations-pages/uruguay.html">
+                        <img src="/Destinations/Images/Place/Uruguay-min.jpg" alt="Uruguay">
+                        <div class="overlay-text">
+                            <div class="overlay-background"></div>
+                            <h2>Uruguay</h2>
+                        </div>
+                    </a>
+                </div>
+                <div class="destination-card" data-country="Peru" data-popularity="80" data-reviews="4.6">
+                    <a href="/Destinations-pages/peru.html">
+                        <img src="/Destinations/Images/Place/Preu-min.jpg" alt="Peru">
+                        <div class="overlay-text">
+                            <div class="overlay-background"></div>
+                            <h2>Peru</h2>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        
+            <!-- 2 -->
+            <h1 class="heading">Asia</h1>
+            <div class="destinations-container">
+                <div class="destination-card" data-country="Japan" data-popularity="94" data-reviews="4.9">
+                    <a href="/Destinations-pages/japan.html">
+                        <img src="/Destinations/Images/Place/Japan-min.jpg" alt="Japan">
+                        <div class="overlay-text">
+                            <div class="overlay-background"></div>
+                            <h2>Japan</h2>
+                        </div>
+                    </a>
+                </div>
+                <div class="destination-card" data-country="China" data-popularity="85" data-reviews="4.4">
+                    <a href="/Destinations-pages/china.html">
+                        <img src="/Destinations/Images/Place/China-min.jpg" alt="China">
+                        <div class="overlay-text">
+                            <div class="overlay-background"></div>
+                            <h2>China</h2>
+                        </div>
+                    </a>
+                </div>
+                <div class="destination-card" data-country="India" data-popularity="2" data-reviews="4.3">
+                    <a href="/Destinations-pages/india.html">
+                        <img src="/Destinations/Images/Place/India-min.jpg" alt="India">
+                        <div class="overlay-text">
+                            <div class="overlay-background"></div>
+                            <h2>India</h2>
+                        </div>
+                    </a>
+                </div>
+                <div class="destination-card" data-country="Pakistan" data-popularity="78" data-reviews="4.2">
+                    <a href="/Destinations-pages/pakistan.html">
+                        <img src="/Destinations/Images/Place/Pakistan-min.jpg" alt="Pakistan">
+                        <div class="overlay-text">
+                            <div class="overlay-background"></div>
+                            <h2>Pakistan</h2>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        
+            <!-- 3 -->
+            <h1 class="heading">Europe</h1>
+            <div class="destinations-container">
+                <div class="destination-card" data-country="Netherlands" data-popularity="90" data-reviews="4.7">
+                    <a href="/Destinations-pages/netherlands.html">
+                        <img src="/Destinations/Images/Place/Netherlands-min.jpg" alt="Netherlands">
+                        <div class="overlay-text">
+                            <div class="overlay-background"></div>
+                            <h2>Netherlands</h2>
+                        </div>
+                    </a>
+                </div>
+                <div class="destination-card" data-country="Italy" data-popularity="95" data-reviews="4.8">
+                    <a href="/Destinations-pages/italy.html">
+                        <img src="/Destinations/Images/Place/Italy-min.jpg" alt="Italy">
+                        <div class="overlay-text">
+                            <div class="overlay-background"></div>
+                            <h2>Italy</h2>
+                        </div>
+                    </a>
+                </div>
+                <div class="destination-card" data-country="Turkey" data-popularity="89" data-reviews="4.6">
+                    <a href="/Destinations-pages/turkey.html">
+                        <img src="/Destinations/Images/Place/Turkey-min.jpg" alt="Turkey">
+                        <div class="overlay-text">
+                            <div class="overlay-background"></div>
+                            <h2>Turkey</h2>
+                        </div>
+                    </a>
+                </div>
+                <div class="destination-card" data-country="Spain" data-popularity="91" data-reviews="4.7">
+                    <a href="/Destinations-pages/spain.html">
+                        <img src="/Destinations/Images/Place/Spain-min.jpg" alt="Spain">
+                        <div class="overlay-text">
+                            <div class="overlay-background"></div>
+                            <h2>Spain</h2>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        
+            <!-- 4 -->
+            <h1 class="heading">Middle East</h1>
+            <div class="destinations-container">
+                <div class="destination-card" data-country="Egypt" data-popularity="87" data-reviews="4.5">
+                    <a href="/Destinations-pages/egypt.html">
+                        <img src="/Destinations/Images/Place/Egypt-min.jpg" alt="Egypt">
+                        <div class="overlay-text">
+                            <div class="overlay-background"></div>
+                            <h2>Egypt</h2>
+                        </div>
+                    </a>
+                </div>
+                <div class="destination-card" data-country="Saudi Arabia" data-popularity="85" data-reviews="4.4">
+                    <a href="/Destinations-pages/saudi-arabia.html">
+                        <img src="/Destinations/Images/Place/KSA-min.jpg" alt="Saudi Arabia">
+                        <div class="overlay-text">
+                            <div class="overlay-background"></div>
+                            <h2>Saudi Arabia</h2>
+                        </div>
+                    </a>
+                </div>
+                <div class="destination-card" data-country="Dubai" data-popularity="93" data-reviews="4.9">
+                    <a href="/Destinations-pages/dubai.html">
+                        <img src="/Destinations/Images/Place/Dubai-min.jpg" alt="Dubai">
+                        <div class="overlay-text">
+                            <div class="overlay-background"></div>
+                            <h2>Dubai</h2>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        
+            <!-- 5 -->
+            <h1 class="heading">Oceania</h1>
+            <div class="destinations-container">
+                <div class="destination-card" data-country="Australia" data-popularity="96" data-reviews="4.9">
+                    <a href="/Destinations-pages/australia.html">
+                        <img src="/Destinations/Images/Place/Australia-min.jpg" alt="Australia">
+                        <div class="overlay-text">
+                            <div class="overlay-background"></div>
+                            <h2>Australia</h2>
+                        </div>
+                    </a>
+                </div>
+                <div class="destination-card" data-country="New Zealand" data-popularity="92" data-reviews="4.8">
+                    <a href="/Destinations-pages/newzealand.html">
+                        <img src="/Destinations/Images/Place/New Z-min.jpg" alt="New Zealand">
+                        <div class="overlay-text">
+                            <div class="overlay-background"></div>
+                            <h2>New Zealand</h2>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <section class="footer">
+        <div class="footer-row">
+            <div class="footer-col">
+                <h4 class="footer-title">Info</h4>
+                <ul class="links">
+                    <li><a href="/About/about.html">About Us</a></li>
+                    <li><a href="/Destinations/destination.html">Destinations</a></li>
+                    <li><a href="/Contact-us/contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-title">Legal</h4>
+                <ul class="links">
+                    <li><a href="/Footer pages/privecy.html">Privacy Policy</a></li>
+                    <li><a href="/Footer pages/terms.html">Terms of Service</a></li>
+                    <li><a href="/Footer pages/cookies.html">Cookies Policy</a></li>
+                    <li><a href="/Footer pages/sitemap.html">Site Map</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-title">Newsletter</h4>
+                <p>
+                    Subscribe to our newsletter for a weekly dose
+                    of news, updates, helpful tips, and
+                    exclusive offers.
+                </p>
+                <div class="footer-form">
+                    <form action="#">
+                        <input type="text" placeholder="Your email" required>
+                        <button type="submit">SUBSCRIBE</button>
+                    </form>
+                </div>
+                <div class="icons">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

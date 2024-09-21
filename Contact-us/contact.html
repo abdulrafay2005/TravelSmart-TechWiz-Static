@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>TravelSmart - Contact Us</title>
+</head>
+
+<body>
+    <header>
+        <div class="nav-bar">
+            <div id="nav-logo">
+                <a href="/index.html">
+                    <img src="/Images/Logo - bold.png" alt="Logo">
+                </a>
+            </div>
+            <nav>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="/index.html" class="nav-links-name">Home</a></li>
+                    <li><a href="/About/about.html" class="nav-links-name">About</a></li>
+                    <li><a href="/Destinations/destination.html" class="nav-links-name">Destinations</a></li>
+                    <!-- <li><a href="" class="nav-links-name">Blog</a></li> -->
+                    <li><a href="/Contact-us/contact.html" class="nav-links-name">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </header>
+
+    <div class="hero-section">
+        <div class="hero-content">
+            <h1 class="hero-title">Contact Us</h1>
+            <p class="hero-description">Send Us Your Questions & Suggestions</p>
+        </div>
+    </div>
+
+
+    <main class="page-color">
+        <div class="space-section"></div>
+
+        <section class="contact-us-section contact-us-side">
+            <div class="contact-details">
+                <h2 class="contact-us-title">Plan Your Trip </h2>
+                <p class="contact-para">We’d love to hear from you!</p>
+                <p class="contact-para">If you have any questions, comments, or are interested in traveling with us,
+                    please get in touch using the form below.</p>
+            </div>
+
+            <h2 class="contact-subheading">Contact Form</h2>
+            <form id="travelForm" class="contact-us-form">
+                <div class="error-message" id="errorMessage" style="text-align: center;"></div>
+
+                <label for="name" class="form-label">Name:</label>
+                <input type="text" id="name" name="name" class="form-input" placeholder="Enter your name">
+
+                <label for="email" class="form-label">Email:</label>
+                <input type="email" id="email" name="email" class="form-input" placeholder="Enter your email">
+
+                <label for="phone" class="form-label">Phone Number:</label>
+                <input type="number" id="phone" name="phone" class="form-input" placeholder="Enter your phone number">
+
+                <label for="destination" class="form-label">Destination:</label>
+                <input type="text" id="destination" name="destination" class="form-input"
+                    placeholder="Enter your travel destination">
+
+                <label for="message" class="form-label">Additional Information:</label>
+                <textarea id="message" name="message" class="form-textarea"
+                    placeholder="Enter any additional information" rows="4"></textarea>
+
+                <div class="form-submit-container">
+                    <button type="submit" class="form-submit">Submit</button>
+                </div>
+            </form>
+        </section>
+        <section id="faq" class="faq-side">
+            <h2 class="faq-title">Frequently Asked Questions</h2>
+            <input type="text" id="faq-search" placeholder="Search FAQs..." />
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <button class="faq-question">What is SmartTravel?</button>
+                    <div class="faq-answer">
+                        <p>SmartTravel is a travel company offering personalized travel experiences and tips to help you make the most of your trips.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">How can I book a trip?</button>
+                    <div class="faq-answer">
+                        <p>You can book a trip by contacting us through the form above or by calling our customer service number.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">What is included in your travel packages?</button>
+                    <div class="faq-answer">
+                        <p>Our travel packages vary, but they generally include flights, accommodation, and some meals. Specific inclusions are listed in the package details.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">What destinations do you offer?</button>
+                    <div class="faq-answer">
+                        <p>We offer trips to a variety of destinations around the world. Check our website for the latest destinations.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">What should I do if I need to cancel or modify my booking?</button>
+                    <div class="faq-answer">
+                        <p>Please contact us as soon as possible to discuss cancellation or modification options. Cancellation policies vary depending on the service provider and booking conditions.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Do you offer travel insurance?</button>
+                    <div class="faq-answer">
+                        <p>Yes, we offer travel insurance to cover unexpected events such as trip cancellations, medical emergencies, and lost luggage. Contact us for more details.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">How do I know if my trip is confirmed?</button>
+                    <div class="faq-answer">
+                        <p>Once your booking is confirmed, you will receive a confirmation email with your travel details and a booking reference number.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">How can I provide feedback on my travel experience?</button>
+                    <div class="faq-answer">
+                        <p>We welcome your feedback! You can provide comments through our website or contact us directly.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Can I request special accommodations for my trip?</button>
+                    <div class="faq-answer">
+                        <p>Yes, special accommodations can be requested. Let us know your needs in advance so we can make the necessary arrangements.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <section class="footer">
+        <div class="footer-row">
+            <div class="footer-col">
+                <h4 class="footer-title">Info</h4>
+                <ul class="links">
+                    <li><a href="/About/about.html">About Us</a></li>
+                    <li><a href="/Destinations/destination.html">Destinations</a></li>
+                    <li><a href="/Contact-us/contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-title">Legal</h4>
+                <ul class="links">
+                    <li><a href="/Footer pages/privecy.html">Privacy Policy</a></li>
+                    <li><a href="/Footer pages/terms.html">Terms of Service</a></li>
+                    <li><a href="/Footer pages/cookies.html">Cookies Policy</a></li>
+                    <li><a href="/Footer pages/sitemap.html">Site Map</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-title">Newsletter</h4>
+                <p>
+                    Subscribe to our newsletter for a weekly dose
+                    of news, updates, helpful tips, and
+                    exclusive offers.
+                </p>
+                <div class="footer-form">
+                    <form action="#">
+                        <input type="text" placeholder="Your email" required>
+                        <button type="submit">SUBSCRIBE</button>
+                    </form>
+                </div>
+                <div class="icons">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+document.addEventListener('DOMContentLoaded', function () {
+    const faqItems = document.querySelectorAll('.faq-item');
+
+    // Initially hide all answers
+    faqItems.forEach(item => {
+        const answer = item.querySelector('.faq-answer');
+        answer.classList.remove('show'); // Ensure all answers are hidden at start
+    });
+
+    // Toggle answer visibility on question click
+    faqItems.forEach(item => {
+        const question = item.querySelector('.faq-question');
+        const answer = item.querySelector('.faq-answer');
+
+        question.addEventListener('click', () => {
+            // Toggle the clicked answer
+            answer.classList.toggle('show');
+        });
+    });
+
+    // Search functionality
+    document.getElementById('faq-search').addEventListener('keyup', function () {
+        const searchQuery = this.value.toLowerCase();
+
+        faqItems.forEach(item => {
+            const question = item.querySelector('.faq-question').innerText.toLowerCase();
+            const answer = item.querySelector('.faq-answer').innerText.toLowerCase();
+
+            if (question.includes(searchQuery) || answer.includes(searchQuery)) {
+                item.style.display = 'block';
+                highlight(item, searchQuery);
+            } else {
+                item.style.display = 'none';
+            }
+        });
+    });
+
+    function highlight(item, query) {
+        const question = item.querySelector('.faq-question');
+        const answer = item.querySelector('.faq-answer');
+
+        question.innerHTML = question.innerText.replace(new RegExp(query, 'gi'), match => {
+            return '<span class="highlight">' + match + '</span>';
+        });
+
+        answer.innerHTML = answer.innerText.replace(new RegExp(query, 'gi'), match => {
+            return '<span class="highlight">' + match + '</span>';
+        });
+    }
+});
+
+
+    </script>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
